@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BADA88220EDE9B900FF15F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA88120EDE9B900FF15F5 /* AppDelegate.m */; };
+		2BADA88520EDE9B900FF15F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA88420EDE9B900FF15F5 /* ViewController.m */; };
+		2BADA88820EDE9B900FF15F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BADA88620EDE9B900FF15F5 /* Main.storyboard */; };
+		2BADA88A20EDE9BA00FF15F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BADA88920EDE9BA00FF15F5 /* Assets.xcassets */; };
+		2BADA88D20EDE9BA00FF15F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BADA88B20EDE9BA00FF15F5 /* LaunchScreen.storyboard */; };
+		2BADA89020EDE9BA00FF15F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA88F20EDE9BA00FF15F5 /* main.m */; };
+		2BADA89A20EDE9BA00FF15F5 /* BlackboardRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA89920EDE9BA00FF15F5 /* BlackboardRecordTests.m */; };
+		2BADA8A520EDE9BA00FF15F5 /* BlackboardRecordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8A420EDE9BA00FF15F5 /* BlackboardRecordUITests.m */; };
+		2BADA8BB20EDEE5900FF15F5 /* ZYSAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8B320EDEE5900FF15F5 /* ZYSAudioRecorder.m */; };
+		2BADA8BC20EDEE5900FF15F5 /* ZYSRecorderUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8B420EDEE5900FF15F5 /* ZYSRecorderUtils.m */; };
+		2BADA8BD20EDEE5900FF15F5 /* ZYSScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8B520EDEE5900FF15F5 /* ZYSScreenRecorder.m */; };
+		2BADA8BE20EDEE5900FF15F5 /* ZYSScreenAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8B620EDEE5900FF15F5 /* ZYSScreenAudioRecorder.m */; };
+		2BADA8ED20EDEEFE00FF15F5 /* BlazeiceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8C120EDEEFE00FF15F5 /* BlazeiceUtils.m */; };
+		2BADA8EE20EDEEFE00FF15F5 /* BlazeiceCurledViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8C420EDEEFE00FF15F5 /* BlazeiceCurledViewBase.m */; };
+		2BADA8EF20EDEEFE00FF15F5 /* UIView+Curled.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8C520EDEEFE00FF15F5 /* UIView+Curled.m */; };
+		2BADA8F020EDEEFE00FF15F5 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8CB20EDEEFE00FF15F5 /* NSTimer+Blocks.m */; };
+		2BADA8F120EDEEFE00FF15F5 /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8CE20EDEEFE00FF15F5 /* UIColor+Extend.m */; };
+		2BADA8F220EDEEFE00FF15F5 /* KTouchPointerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8D220EDEEFE00FF15F5 /* KTouchPointerWindow.m */; };
+		2BADA8F320EDEEFE00FF15F5 /* BlazeiceUIControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8D520EDEEFE00FF15F5 /* BlazeiceUIControl.m */; };
+		2BADA8F420EDEEFE00FF15F5 /* BlazeiceUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8D620EDEEFE00FF15F5 /* BlazeiceUIView.m */; };
+		2BADA8F520EDEEFE00FF15F5 /* UIView+ZXQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8DA20EDEEFE00FF15F5 /* UIView+ZXQuartz.m */; };
+		2BADA8F620EDEEFE00FF15F5 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8DC20EDEEFE00FF15F5 /* UncaughtExceptionHandler.m */; };
+		2BADA8F720EDEEFE00FF15F5 /* SRScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8DD20EDEEFE00FF15F5 /* SRScreenRecorder.m */; };
+		2BADA8F820EDEEFE00FF15F5 /* UIView+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8DE20EDEEFE00FF15F5 /* UIView+UIImage.m */; };
+		2BADA8F920EDEEFE00FF15F5 /* UIImage-Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8DF20EDEEFE00FF15F5 /* UIImage-Extensions.m */; };
+		2BADA8FA20EDEEFE00FF15F5 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8E020EDEEFE00FF15F5 /* Utilities.m */; };
+		2BADA8FB20EDEEFE00FF15F5 /* BlazeicePlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8E220EDEEFE00FF15F5 /* BlazeicePlist.m */; };
+		2BADA8FC20EDEEFE00FF15F5 /* BlazeiceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8E420EDEEFE00FF15F5 /* BlazeiceObject.m */; };
+		2BADA8FD20EDEEFE00FF15F5 /* BlazeiceDooleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8E920EDEEFE00FF15F5 /* BlazeiceDooleView.m */; };
+		2BADA8FE20EDEEFE00FF15F5 /* ACEDrawingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8EA20EDEEFE00FF15F5 /* ACEDrawingTools.m */; };
+		2BADA8FF20EDEEFE00FF15F5 /* ACEDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA8EB20EDEEFE00FF15F5 /* ACEDrawingView.m */; };
+		2BADA90120EDF1D200FF15F5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BADA90020EDF1D100FF15F5 /* QuartzCore.framework */; };
+		2BADA90320EDF1DD00FF15F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BADA90220EDF1DC00FF15F5 /* CoreGraphics.framework */; };
+		2BADA90520EDF1E900FF15F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BADA90420EDF1E900FF15F5 /* UIKit.framework */; };
+		2BADA90720EDF1F200FF15F5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BADA90620EDF1F200FF15F5 /* AVFoundation.framework */; };
+		2BADA92120EDFAD800FF15F5 /* LXFDoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA90A20EDFAD800FF15F5 /* LXFDoManager.m */; };
+		2BADA92220EDFAD800FF15F5 /* LXFDrawBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA90B20EDFAD800FF15F5 /* LXFDrawBoard.m */; };
+		2BADA92320EDFAD800FF15F5 /* LXFTextBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA91120EDFAD800FF15F5 /* LXFTextBrush.m */; };
+		2BADA92420EDFAD800FF15F5 /* LXFMosaicBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA91820EDFAD800FF15F5 /* LXFMosaicBrush.m */; };
+		2BADA92520EDFAD800FF15F5 /* LXFBaseBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA91A20EDFAD800FF15F5 /* LXFBaseBrush.m */; };
+		2BADA92620EDFAD800FF15F5 /* LXFArrowBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA91B20EDFAD800FF15F5 /* LXFArrowBrush.m */; };
+		2BADA92720EDFAD800FF15F5 /* LXFPencilBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA91C20EDFAD800FF15F5 /* LXFPencilBrush.m */; };
+		2BADA92820EDFAD800FF15F5 /* LXFLineBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA91D20EDFAD800FF15F5 /* LXFLineBrush.m */; };
+		2BADA92920EDFAD800FF15F5 /* LXFRectangleBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA91E20EDFAD800FF15F5 /* LXFRectangleBrush.m */; };
+		2BADA92A20EDFAD800FF15F5 /* LXFEraserBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA91F20EDFAD800FF15F5 /* LXFEraserBrush.m */; };
+		2BADA92B20EDFAD800FF15F5 /* LXFDrawBoardStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA92020EDFAD800FF15F5 /* LXFDrawBoardStyle.m */; };
+		6F05831A0CF45FA1C213B297 /* libPods-BlackboardRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D51CA552BE5640590CA6E /* libPods-BlackboardRecord.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BADA89620EDE9BA00FF15F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BADA87520EDE9B900FF15F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BADA87C20EDE9B900FF15F5;
+			remoteInfo = BlackboardRecord;
+		};
+		2BADA8A120EDE9BA00FF15F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BADA87520EDE9B900FF15F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BADA87C20EDE9B900FF15F5;
+			remoteInfo = BlackboardRecord;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FBE1E16757A7937388CB193 /* Pods-BlackboardRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackboardRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackboardRecord/Pods-BlackboardRecord.release.xcconfig"; sourceTree = "<group>"; };
+		2BADA87D20EDE9B900FF15F5 /* BlackboardRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackboardRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BADA88020EDE9B900FF15F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BADA88120EDE9B900FF15F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BADA88320EDE9B900FF15F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2BADA88420EDE9B900FF15F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2BADA88720EDE9B900FF15F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BADA88920EDE9BA00FF15F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BADA88C20EDE9BA00FF15F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BADA88E20EDE9BA00FF15F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BADA88F20EDE9BA00FF15F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BADA89520EDE9BA00FF15F5 /* BlackboardRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackboardRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BADA89920EDE9BA00FF15F5 /* BlackboardRecordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlackboardRecordTests.m; sourceTree = "<group>"; };
+		2BADA89B20EDE9BA00FF15F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BADA8A020EDE9BA00FF15F5 /* BlackboardRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackboardRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BADA8A420EDE9BA00FF15F5 /* BlackboardRecordUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlackboardRecordUITests.m; sourceTree = "<group>"; };
+		2BADA8A620EDE9BA00FF15F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BADA8B320EDEE5900FF15F5 /* ZYSAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSAudioRecorder.m; sourceTree = "<group>"; };
+		2BADA8B420EDEE5900FF15F5 /* ZYSRecorderUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSRecorderUtils.m; sourceTree = "<group>"; };
+		2BADA8B520EDEE5900FF15F5 /* ZYSScreenRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSScreenRecorder.m; sourceTree = "<group>"; };
+		2BADA8B620EDEE5900FF15F5 /* ZYSScreenAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSScreenAudioRecorder.m; sourceTree = "<group>"; };
+		2BADA8B720EDEE5900FF15F5 /* ZYSAudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSAudioRecorder.h; sourceTree = "<group>"; };
+		2BADA8B820EDEE5900FF15F5 /* ZYSRecorderUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSRecorderUtils.h; sourceTree = "<group>"; };
+		2BADA8B920EDEE5900FF15F5 /* ZYSScreenAudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSScreenAudioRecorder.h; sourceTree = "<group>"; };
+		2BADA8BA20EDEE5900FF15F5 /* ZYSScreenRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSScreenRecorder.h; sourceTree = "<group>"; };
+		2BADA8C120EDEEFE00FF15F5 /* BlazeiceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeiceUtils.m; sourceTree = "<group>"; };
+		2BADA8C220EDEEFE00FF15F5 /* UIView+ZXQuartz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZXQuartz.h"; sourceTree = "<group>"; };
+		2BADA8C320EDEEFE00FF15F5 /* KTouchPointerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTouchPointerWindow.h; sourceTree = "<group>"; };
+		2BADA8C420EDEEFE00FF15F5 /* BlazeiceCurledViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeiceCurledViewBase.m; sourceTree = "<group>"; };
+		2BADA8C520EDEEFE00FF15F5 /* UIView+Curled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Curled.m"; sourceTree = "<group>"; };
+		2BADA8C620EDEEFE00FF15F5 /* UIImage-Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Extensions.h"; sourceTree = "<group>"; };
+		2BADA8C720EDEEFE00FF15F5 /* UIView+UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIImage.h"; sourceTree = "<group>"; };
+		2BADA8C820EDEEFE00FF15F5 /* SRScreenRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRScreenRecorder.h; sourceTree = "<group>"; };
+		2BADA8C920EDEEFE00FF15F5 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		2BADA8CA20EDEEFE00FF15F5 /* BlazeiceCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceCommon.h; sourceTree = "<group>"; };
+		2BADA8CB20EDEEFE00FF15F5 /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Blocks.m"; sourceTree = "<group>"; };
+		2BADA8CC20EDEEFE00FF15F5 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		2BADA8CD20EDEEFE00FF15F5 /* BlazeiceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceObject.h; sourceTree = "<group>"; };
+		2BADA8CE20EDEEFE00FF15F5 /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extend.m"; sourceTree = "<group>"; };
+		2BADA8CF20EDEEFE00FF15F5 /* BlazeicePlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeicePlist.h; sourceTree = "<group>"; };
+		2BADA8D020EDEEFE00FF15F5 /* UIView+Curled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Curled.h"; sourceTree = "<group>"; };
+		2BADA8D120EDEEFE00FF15F5 /* BlazeiceCurledViewBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceCurledViewBase.h; sourceTree = "<group>"; };
+		2BADA8D220EDEEFE00FF15F5 /* KTouchPointerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTouchPointerWindow.m; sourceTree = "<group>"; };
+		2BADA8D420EDEEFE00FF15F5 /* BlazeiceUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceUIView.h; sourceTree = "<group>"; };
+		2BADA8D520EDEEFE00FF15F5 /* BlazeiceUIControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeiceUIControl.m; sourceTree = "<group>"; };
+		2BADA8D620EDEEFE00FF15F5 /* BlazeiceUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeiceUIView.m; sourceTree = "<group>"; };
+		2BADA8D720EDEEFE00FF15F5 /* BlazeiceBlockUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceBlockUI.h; sourceTree = "<group>"; };
+		2BADA8D820EDEEFE00FF15F5 /* BlazeiceUIControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceUIControl.h; sourceTree = "<group>"; };
+		2BADA8D920EDEEFE00FF15F5 /* BlazeiceDEBUG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceDEBUG.h; sourceTree = "<group>"; };
+		2BADA8DA20EDEEFE00FF15F5 /* UIView+ZXQuartz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZXQuartz.m"; sourceTree = "<group>"; };
+		2BADA8DB20EDEEFE00FF15F5 /* BlazeiceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceUtils.h; sourceTree = "<group>"; };
+		2BADA8DC20EDEEFE00FF15F5 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		2BADA8DD20EDEEFE00FF15F5 /* SRScreenRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRScreenRecorder.m; sourceTree = "<group>"; };
+		2BADA8DE20EDEEFE00FF15F5 /* UIView+UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIImage.m"; sourceTree = "<group>"; };
+		2BADA8DF20EDEEFE00FF15F5 /* UIImage-Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-Extensions.m"; sourceTree = "<group>"; };
+		2BADA8E020EDEEFE00FF15F5 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		2BADA8E120EDEEFE00FF15F5 /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Blocks.h"; sourceTree = "<group>"; };
+		2BADA8E220EDEEFE00FF15F5 /* BlazeicePlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeicePlist.m; sourceTree = "<group>"; };
+		2BADA8E320EDEEFE00FF15F5 /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extend.h"; sourceTree = "<group>"; };
+		2BADA8E420EDEEFE00FF15F5 /* BlazeiceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeiceObject.m; sourceTree = "<group>"; };
+		2BADA8E620EDEEFE00FF15F5 /* ACEDrawingTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEDrawingTools.h; sourceTree = "<group>"; };
+		2BADA8E720EDEEFE00FF15F5 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		2BADA8E820EDEEFE00FF15F5 /* ACEDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEDrawingView.h; sourceTree = "<group>"; };
+		2BADA8E920EDEEFE00FF15F5 /* BlazeiceDooleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeiceDooleView.m; sourceTree = "<group>"; };
+		2BADA8EA20EDEEFE00FF15F5 /* ACEDrawingTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACEDrawingTools.m; sourceTree = "<group>"; };
+		2BADA8EB20EDEEFE00FF15F5 /* ACEDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACEDrawingView.m; sourceTree = "<group>"; };
+		2BADA8EC20EDEEFE00FF15F5 /* BlazeiceDooleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeiceDooleView.h; sourceTree = "<group>"; };
+		2BADA90020EDF1D100FF15F5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2BADA90220EDF1DC00FF15F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2BADA90420EDF1E900FF15F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2BADA90620EDF1F200FF15F5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2BADA90820EDF2C100FF15F5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2BADA90A20EDFAD800FF15F5 /* LXFDoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFDoManager.m; sourceTree = "<group>"; };
+		2BADA90B20EDFAD800FF15F5 /* LXFDrawBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFDrawBoard.m; sourceTree = "<group>"; };
+		2BADA90C20EDFAD800FF15F5 /* LXFDrawBoardStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFDrawBoardStyle.h; sourceTree = "<group>"; };
+		2BADA90D20EDFAD800FF15F5 /* LXFDrawBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFDrawBoard.h; sourceTree = "<group>"; };
+		2BADA90E20EDFAD800FF15F5 /* LXFDoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFDoManager.h; sourceTree = "<group>"; };
+		2BADA91020EDFAD800FF15F5 /* LXFBaseBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFBaseBrush.h; sourceTree = "<group>"; };
+		2BADA91120EDFAD800FF15F5 /* LXFTextBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFTextBrush.m; sourceTree = "<group>"; };
+		2BADA91220EDFAD800FF15F5 /* LXFMosaicBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFMosaicBrush.h; sourceTree = "<group>"; };
+		2BADA91320EDFAD800FF15F5 /* LXFLineBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFLineBrush.h; sourceTree = "<group>"; };
+		2BADA91420EDFAD800FF15F5 /* LXFRectangleBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFRectangleBrush.h; sourceTree = "<group>"; };
+		2BADA91520EDFAD800FF15F5 /* LXFPencilBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFPencilBrush.h; sourceTree = "<group>"; };
+		2BADA91620EDFAD800FF15F5 /* LXFArrowBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFArrowBrush.h; sourceTree = "<group>"; };
+		2BADA91720EDFAD800FF15F5 /* LXFEraserBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFEraserBrush.h; sourceTree = "<group>"; };
+		2BADA91820EDFAD800FF15F5 /* LXFMosaicBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFMosaicBrush.m; sourceTree = "<group>"; };
+		2BADA91920EDFAD800FF15F5 /* LXFTextBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXFTextBrush.h; sourceTree = "<group>"; };
+		2BADA91A20EDFAD800FF15F5 /* LXFBaseBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFBaseBrush.m; sourceTree = "<group>"; };
+		2BADA91B20EDFAD800FF15F5 /* LXFArrowBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFArrowBrush.m; sourceTree = "<group>"; };
+		2BADA91C20EDFAD800FF15F5 /* LXFPencilBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFPencilBrush.m; sourceTree = "<group>"; };
+		2BADA91D20EDFAD800FF15F5 /* LXFLineBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFLineBrush.m; sourceTree = "<group>"; };
+		2BADA91E20EDFAD800FF15F5 /* LXFRectangleBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFRectangleBrush.m; sourceTree = "<group>"; };
+		2BADA91F20EDFAD800FF15F5 /* LXFEraserBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFEraserBrush.m; sourceTree = "<group>"; };
+		2BADA92020EDFAD800FF15F5 /* LXFDrawBoardStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFDrawBoardStyle.m; sourceTree = "<group>"; };
+		6BBDB435DFED3B0578832667 /* Pods-BlackboardRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackboardRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackboardRecord/Pods-BlackboardRecord.debug.xcconfig"; sourceTree = "<group>"; };
+		BB6D51CA552BE5640590CA6E /* libPods-BlackboardRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlackboardRecord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BADA87A20EDE9B900FF15F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BADA90720EDF1F200FF15F5 /* AVFoundation.framework in Frameworks */,
+				2BADA90520EDF1E900FF15F5 /* UIKit.framework in Frameworks */,
+				2BADA90320EDF1DD00FF15F5 /* CoreGraphics.framework in Frameworks */,
+				2BADA90120EDF1D200FF15F5 /* QuartzCore.framework in Frameworks */,
+				6F05831A0CF45FA1C213B297 /* libPods-BlackboardRecord.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BADA89220EDE9BA00FF15F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BADA89D20EDE9BA00FF15F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AFC3CD4D2F696BB2E968CB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BADA90620EDF1F200FF15F5 /* AVFoundation.framework */,
+				2BADA90420EDF1E900FF15F5 /* UIKit.framework */,
+				2BADA90220EDF1DC00FF15F5 /* CoreGraphics.framework */,
+				2BADA90020EDF1D100FF15F5 /* QuartzCore.framework */,
+				BB6D51CA552BE5640590CA6E /* libPods-BlackboardRecord.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BADA87420EDE9B900FF15F5 = {
+			isa = PBXGroup;
+			children = (
+				2BADA87F20EDE9B900FF15F5 /* BlackboardRecord */,
+				2BADA89820EDE9BA00FF15F5 /* BlackboardRecordTests */,
+				2BADA8A320EDE9BA00FF15F5 /* BlackboardRecordUITests */,
+				2BADA87E20EDE9B900FF15F5 /* Products */,
+				3FAE57AACC5A151000B807E6 /* Pods */,
+				2AFC3CD4D2F696BB2E968CB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2BADA87E20EDE9B900FF15F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BADA87D20EDE9B900FF15F5 /* BlackboardRecord.app */,
+				2BADA89520EDE9BA00FF15F5 /* BlackboardRecordTests.xctest */,
+				2BADA8A020EDE9BA00FF15F5 /* BlackboardRecordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BADA87F20EDE9B900FF15F5 /* BlackboardRecord */ = {
+			isa = PBXGroup;
+			children = (
+				2BADA90920EDFAD800FF15F5 /* LXFDrawBoard */,
+				2BADA8BF20EDEEFE00FF15F5 /* DrawView */,
+				2BADA8B220EDEE5900FF15F5 /* ScreenAudioRecorder */,
+				2BADA88020EDE9B900FF15F5 /* AppDelegate.h */,
+				2BADA88120EDE9B900FF15F5 /* AppDelegate.m */,
+				2BADA90820EDF2C100FF15F5 /* PrefixHeader.pch */,
+				2BADA88320EDE9B900FF15F5 /* ViewController.h */,
+				2BADA88420EDE9B900FF15F5 /* ViewController.m */,
+				2BADA88620EDE9B900FF15F5 /* Main.storyboard */,
+				2BADA88920EDE9BA00FF15F5 /* Assets.xcassets */,
+				2BADA88B20EDE9BA00FF15F5 /* LaunchScreen.storyboard */,
+				2BADA88E20EDE9BA00FF15F5 /* Info.plist */,
+				2BADA88F20EDE9BA00FF15F5 /* main.m */,
+			);
+			path = BlackboardRecord;
+			sourceTree = "<group>";
+		};
+		2BADA89820EDE9BA00FF15F5 /* BlackboardRecordTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BADA89920EDE9BA00FF15F5 /* BlackboardRecordTests.m */,
+				2BADA89B20EDE9BA00FF15F5 /* Info.plist */,
+			);
+			path = BlackboardRecordTests;
+			sourceTree = "<group>";
+		};
+		2BADA8A320EDE9BA00FF15F5 /* BlackboardRecordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BADA8A420EDE9BA00FF15F5 /* BlackboardRecordUITests.m */,
+				2BADA8A620EDE9BA00FF15F5 /* Info.plist */,
+			);
+			path = BlackboardRecordUITests;
+			sourceTree = "<group>";
+		};
+		2BADA8B220EDEE5900FF15F5 /* ScreenAudioRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				2BADA8B320EDEE5900FF15F5 /* ZYSAudioRecorder.m */,
+				2BADA8B420EDEE5900FF15F5 /* ZYSRecorderUtils.m */,
+				2BADA8B520EDEE5900FF15F5 /* ZYSScreenRecorder.m */,
+				2BADA8B620EDEE5900FF15F5 /* ZYSScreenAudioRecorder.m */,
+				2BADA8B720EDEE5900FF15F5 /* ZYSAudioRecorder.h */,
+				2BADA8B820EDEE5900FF15F5 /* ZYSRecorderUtils.h */,
+				2BADA8B920EDEE5900FF15F5 /* ZYSScreenAudioRecorder.h */,
+				2BADA8BA20EDEE5900FF15F5 /* ZYSScreenRecorder.h */,
+			);
+			path = ScreenAudioRecorder;
+			sourceTree = "<group>";
+		};
+		2BADA8BF20EDEEFE00FF15F5 /* DrawView */ = {
+			isa = PBXGroup;
+			children = (
+				2BADA8C020EDEEFE00FF15F5 /* LZXUtils */,
+				2BADA8E520EDEEFE00FF15F5 /* drawView */,
+			);
+			path = DrawView;
+			sourceTree = "<group>";
+		};
+		2BADA8C020EDEEFE00FF15F5 /* LZXUtils */ = {
+			isa = PBXGroup;
+			children = (
+				2BADA8C120EDEEFE00FF15F5 /* BlazeiceUtils.m */,
+				2BADA8C220EDEEFE00FF15F5 /* UIView+ZXQuartz.h */,
+				2BADA8C320EDEEFE00FF15F5 /* KTouchPointerWindow.h */,
+				2BADA8C420EDEEFE00FF15F5 /* BlazeiceCurledViewBase.m */,
+				2BADA8C520EDEEFE00FF15F5 /* UIView+Curled.m */,
+				2BADA8C620EDEEFE00FF15F5 /* UIImage-Extensions.h */,
+				2BADA8C720EDEEFE00FF15F5 /* UIView+UIImage.h */,
+				2BADA8C820EDEEFE00FF15F5 /* SRScreenRecorder.h */,
+				2BADA8C920EDEEFE00FF15F5 /* UncaughtExceptionHandler.h */,
+				2BADA8CA20EDEEFE00FF15F5 /* BlazeiceCommon.h */,
+				2BADA8CB20EDEEFE00FF15F5 /* NSTimer+Blocks.m */,
+				2BADA8CC20EDEEFE00FF15F5 /* Utilities.h */,
+				2BADA8CD20EDEEFE00FF15F5 /* BlazeiceObject.h */,
+				2BADA8CE20EDEEFE00FF15F5 /* UIColor+Extend.m */,
+				2BADA8CF20EDEEFE00FF15F5 /* BlazeicePlist.h */,
+				2BADA8D020EDEEFE00FF15F5 /* UIView+Curled.h */,
+				2BADA8D120EDEEFE00FF15F5 /* BlazeiceCurledViewBase.h */,
+				2BADA8D220EDEEFE00FF15F5 /* KTouchPointerWindow.m */,
+				2BADA8D320EDEEFE00FF15F5 /* BlockUI */,
+				2BADA8D920EDEEFE00FF15F5 /* BlazeiceDEBUG.h */,
+				2BADA8DA20EDEEFE00FF15F5 /* UIView+ZXQuartz.m */,
+				2BADA8DB20EDEEFE00FF15F5 /* BlazeiceUtils.h */,
+				2BADA8DC20EDEEFE00FF15F5 /* UncaughtExceptionHandler.m */,
+				2BADA8DD20EDEEFE00FF15F5 /* SRScreenRecorder.m */,
+				2BADA8DE20EDEEFE00FF15F5 /* UIView+UIImage.m */,
+				2BADA8DF20EDEEFE00FF15F5 /* UIImage-Extensions.m */,
+				2BADA8E020EDEEFE00FF15F5 /* Utilities.m */,
+				2BADA8E120EDEEFE00FF15F5 /* NSTimer+Blocks.h */,
+				2BADA8E220EDEEFE00FF15F5 /* BlazeicePlist.m */,
+				2BADA8E320EDEEFE00FF15F5 /* UIColor+Extend.h */,
+				2BADA8E420EDEEFE00FF15F5 /* BlazeiceObject.m */,
+			);
+			path = LZXUtils;
+			sourceTree = "<group>";
+		};
+		2BADA8D320EDEEFE00FF15F5 /* BlockUI */ = {
+			isa = PBXGroup;
+			children = (
+				2BADA8D420EDEEFE00FF15F5 /* BlazeiceUIView.h */,
+				2BADA8D520EDEEFE00FF15F5 /* BlazeiceUIControl.m */,
+				2BADA8D620EDEEFE00FF15F5 /* BlazeiceUIView.m */,
+				2BADA8D720EDEEFE00FF15F5 /* BlazeiceBlockUI.h */,
+				2BADA8D820EDEEFE00FF15F5 /* BlazeiceUIControl.h */,
+			);
+			path = BlockUI;
+			sourceTree = "<group>";
+		};
+		2BADA8E520EDEEFE00FF15F5 /* drawView */ = {
+			isa = PBXGroup;
+			children = (
+				2BADA8E620EDEEFE00FF15F5 /* ACEDrawingTools.h */,
+				2BADA8E720EDEEFE00FF15F5 /* Mark.h */,
+				2BADA8E820EDEEFE00FF15F5 /* ACEDrawingView.h */,
+				2BADA8E920EDEEFE00FF15F5 /* BlazeiceDooleView.m */,
+				2BADA8EA20EDEEFE00FF15F5 /* ACEDrawingTools.m */,
+				2BADA8EB20EDEEFE00FF15F5 /* ACEDrawingView.m */,
+				2BADA8EC20EDEEFE00FF15F5 /* BlazeiceDooleView.h */,
+			);
+			path = drawView;
+			sourceTree = "<group>";
+		};
+		2BADA90920EDFAD800FF15F5 /* LXFDrawBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2BADA90A20EDFAD800FF15F5 /* LXFDoManager.m */,
+				2BADA90B20EDFAD800FF15F5 /* LXFDrawBoard.m */,
+				2BADA90C20EDFAD800FF15F5 /* LXFDrawBoardStyle.h */,
+				2BADA90D20EDFAD800FF15F5 /* LXFDrawBoard.h */,
+				2BADA90E20EDFAD800FF15F5 /* LXFDoManager.h */,
+				2BADA90F20EDFAD800FF15F5 /* LXFBrush */,
+				2BADA92020EDFAD800FF15F5 /* LXFDrawBoardStyle.m */,
+			);
+			path = LXFDrawBoard;
+			sourceTree = "<group>";
+		};
+		2BADA90F20EDFAD800FF15F5 /* LXFBrush */ = {
+			isa = PBXGroup;
+			children = (
+				2BADA91020EDFAD800FF15F5 /* LXFBaseBrush.h */,
+				2BADA91120EDFAD800FF15F5 /* LXFTextBrush.m */,
+				2BADA91220EDFAD800FF15F5 /* LXFMosaicBrush.h */,
+				2BADA91320EDFAD800FF15F5 /* LXFLineBrush.h */,
+				2BADA91420EDFAD800FF15F5 /* LXFRectangleBrush.h */,
+				2BADA91520EDFAD800FF15F5 /* LXFPencilBrush.h */,
+				2BADA91620EDFAD800FF15F5 /* LXFArrowBrush.h */,
+				2BADA91720EDFAD800FF15F5 /* LXFEraserBrush.h */,
+				2BADA91820EDFAD800FF15F5 /* LXFMosaicBrush.m */,
+				2BADA91920EDFAD800FF15F5 /* LXFTextBrush.h */,
+				2BADA91A20EDFAD800FF15F5 /* LXFBaseBrush.m */,
+				2BADA91B20EDFAD800FF15F5 /* LXFArrowBrush.m */,
+				2BADA91C20EDFAD800FF15F5 /* LXFPencilBrush.m */,
+				2BADA91D20EDFAD800FF15F5 /* LXFLineBrush.m */,
+				2BADA91E20EDFAD800FF15F5 /* LXFRectangleBrush.m */,
+				2BADA91F20EDFAD800FF15F5 /* LXFEraserBrush.m */,
+			);
+			path = LXFBrush;
+			sourceTree = "<group>";
+		};
+		3FAE57AACC5A151000B807E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BBDB435DFED3B0578832667 /* Pods-BlackboardRecord.debug.xcconfig */,
+				0FBE1E16757A7937388CB193 /* Pods-BlackboardRecord.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BADA87C20EDE9B900FF15F5 /* BlackboardRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BADA8A920EDE9BA00FF15F5 /* Build configuration list for PBXNativeTarget "BlackboardRecord" */;
+			buildPhases = (
+				F417A7099B49439F2F9D69BA /* [CP] Check Pods Manifest.lock */,
+				2BADA87920EDE9B900FF15F5 /* Sources */,
+				2BADA87A20EDE9B900FF15F5 /* Frameworks */,
+				2BADA87B20EDE9B900FF15F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlackboardRecord;
+			productName = BlackboardRecord;
+			productReference = 2BADA87D20EDE9B900FF15F5 /* BlackboardRecord.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BADA89420EDE9BA00FF15F5 /* BlackboardRecordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BADA8AC20EDE9BA00FF15F5 /* Build configuration list for PBXNativeTarget "BlackboardRecordTests" */;
+			buildPhases = (
+				2BADA89120EDE9BA00FF15F5 /* Sources */,
+				2BADA89220EDE9BA00FF15F5 /* Frameworks */,
+				2BADA89320EDE9BA00FF15F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BADA89720EDE9BA00FF15F5 /* PBXTargetDependency */,
+			);
+			name = BlackboardRecordTests;
+			productName = BlackboardRecordTests;
+			productReference = 2BADA89520EDE9BA00FF15F5 /* BlackboardRecordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BADA89F20EDE9BA00FF15F5 /* BlackboardRecordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BADA8AF20EDE9BA00FF15F5 /* Build configuration list for PBXNativeTarget "BlackboardRecordUITests" */;
+			buildPhases = (
+				2BADA89C20EDE9BA00FF15F5 /* Sources */,
+				2BADA89D20EDE9BA00FF15F5 /* Frameworks */,
+				2BADA89E20EDE9BA00FF15F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BADA8A220EDE9BA00FF15F5 /* PBXTargetDependency */,
+			);
+			name = BlackboardRecordUITests;
+			productName = BlackboardRecordUITests;
+			productReference = 2BADA8A020EDE9BA00FF15F5 /* BlackboardRecordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BADA87520EDE9B900FF15F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = lyons;
+				TargetAttributes = {
+					2BADA87C20EDE9B900FF15F5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					2BADA89420EDE9BA00FF15F5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 2BADA87C20EDE9B900FF15F5;
+					};
+					2BADA89F20EDE9BA00FF15F5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 2BADA87C20EDE9B900FF15F5;
+					};
+				};
+			};
+			buildConfigurationList = 2BADA87820EDE9B900FF15F5 /* Build configuration list for PBXProject "BlackboardRecord" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BADA87420EDE9B900FF15F5;
+			productRefGroup = 2BADA87E20EDE9B900FF15F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BADA87C20EDE9B900FF15F5 /* BlackboardRecord */,
+				2BADA89420EDE9BA00FF15F5 /* BlackboardRecordTests */,
+				2BADA89F20EDE9BA00FF15F5 /* BlackboardRecordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BADA87B20EDE9B900FF15F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BADA88D20EDE9BA00FF15F5 /* LaunchScreen.storyboard in Resources */,
+				2BADA88A20EDE9BA00FF15F5 /* Assets.xcassets in Resources */,
+				2BADA88820EDE9B900FF15F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BADA89320EDE9BA00FF15F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BADA89E20EDE9BA00FF15F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F417A7099B49439F2F9D69BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlackboardRecord-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BADA87920EDE9B900FF15F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BADA8F320EDEEFE00FF15F5 /* BlazeiceUIControl.m in Sources */,
+				2BADA8F920EDEEFE00FF15F5 /* UIImage-Extensions.m in Sources */,
+				2BADA8EE20EDEEFE00FF15F5 /* BlazeiceCurledViewBase.m in Sources */,
+				2BADA92620EDFAD800FF15F5 /* LXFArrowBrush.m in Sources */,
+				2BADA92320EDFAD800FF15F5 /* LXFTextBrush.m in Sources */,
+				2BADA8FD20EDEEFE00FF15F5 /* BlazeiceDooleView.m in Sources */,
+				2BADA92120EDFAD800FF15F5 /* LXFDoManager.m in Sources */,
+				2BADA88520EDE9B900FF15F5 /* ViewController.m in Sources */,
+				2BADA8F420EDEEFE00FF15F5 /* BlazeiceUIView.m in Sources */,
+				2BADA89020EDE9BA00FF15F5 /* main.m in Sources */,
+				2BADA8FE20EDEEFE00FF15F5 /* ACEDrawingTools.m in Sources */,
+				2BADA92720EDFAD800FF15F5 /* LXFPencilBrush.m in Sources */,
+				2BADA92920EDFAD800FF15F5 /* LXFRectangleBrush.m in Sources */,
+				2BADA92220EDFAD800FF15F5 /* LXFDrawBoard.m in Sources */,
+				2BADA8ED20EDEEFE00FF15F5 /* BlazeiceUtils.m in Sources */,
+				2BADA92520EDFAD800FF15F5 /* LXFBaseBrush.m in Sources */,
+				2BADA8FB20EDEEFE00FF15F5 /* BlazeicePlist.m in Sources */,
+				2BADA88220EDE9B900FF15F5 /* AppDelegate.m in Sources */,
+				2BADA8F820EDEEFE00FF15F5 /* UIView+UIImage.m in Sources */,
+				2BADA8F020EDEEFE00FF15F5 /* NSTimer+Blocks.m in Sources */,
+				2BADA8FF20EDEEFE00FF15F5 /* ACEDrawingView.m in Sources */,
+				2BADA92420EDFAD800FF15F5 /* LXFMosaicBrush.m in Sources */,
+				2BADA8F720EDEEFE00FF15F5 /* SRScreenRecorder.m in Sources */,
+				2BADA8F620EDEEFE00FF15F5 /* UncaughtExceptionHandler.m in Sources */,
+				2BADA8FC20EDEEFE00FF15F5 /* BlazeiceObject.m in Sources */,
+				2BADA8FA20EDEEFE00FF15F5 /* Utilities.m in Sources */,
+				2BADA8EF20EDEEFE00FF15F5 /* UIView+Curled.m in Sources */,
+				2BADA8F520EDEEFE00FF15F5 /* UIView+ZXQuartz.m in Sources */,
+				2BADA8F120EDEEFE00FF15F5 /* UIColor+Extend.m in Sources */,
+				2BADA8F220EDEEFE00FF15F5 /* KTouchPointerWindow.m in Sources */,
+				2BADA8BE20EDEE5900FF15F5 /* ZYSScreenAudioRecorder.m in Sources */,
+				2BADA8BB20EDEE5900FF15F5 /* ZYSAudioRecorder.m in Sources */,
+				2BADA92B20EDFAD800FF15F5 /* LXFDrawBoardStyle.m in Sources */,
+				2BADA8BD20EDEE5900FF15F5 /* ZYSScreenRecorder.m in Sources */,
+				2BADA8BC20EDEE5900FF15F5 /* ZYSRecorderUtils.m in Sources */,
+				2BADA92820EDFAD800FF15F5 /* LXFLineBrush.m in Sources */,
+				2BADA92A20EDFAD800FF15F5 /* LXFEraserBrush.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BADA89120EDE9BA00FF15F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BADA89A20EDE9BA00FF15F5 /* BlackboardRecordTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BADA89C20EDE9BA00FF15F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BADA8A520EDE9BA00FF15F5 /* BlackboardRecordUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BADA89720EDE9BA00FF15F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BADA87C20EDE9B900FF15F5 /* BlackboardRecord */;
+			targetProxy = 2BADA89620EDE9BA00FF15F5 /* PBXContainerItemProxy */;
+		};
+		2BADA8A220EDE9BA00FF15F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BADA87C20EDE9B900FF15F5 /* BlackboardRecord */;
+			targetProxy = 2BADA8A120EDE9BA00FF15F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BADA88620EDE9B900FF15F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BADA88720EDE9B900FF15F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BADA88B20EDE9BA00FF15F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BADA88C20EDE9BA00FF15F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BADA8A720EDE9BA00FF15F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2BADA8A820EDE9BA00FF15F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BADA8AA20EDE9BA00FF15F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BBDB435DFED3B0578832667 /* Pods-BlackboardRecord.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79MZ7A623K;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BlackboardRecord/PrefixHeader.pch";
+				INFOPLIST_FILE = BlackboardRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyons.BlackboardRecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BADA8AB20EDE9BA00FF15F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FBE1E16757A7937388CB193 /* Pods-BlackboardRecord.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79MZ7A623K;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BlackboardRecord/PrefixHeader.pch";
+				INFOPLIST_FILE = BlackboardRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyons.BlackboardRecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BADA8AD20EDE9BA00FF15F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79MZ7A623K;
+				INFOPLIST_FILE = BlackboardRecordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyons.BlackboardRecordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackboardRecord.app/BlackboardRecord";
+			};
+			name = Debug;
+		};
+		2BADA8AE20EDE9BA00FF15F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79MZ7A623K;
+				INFOPLIST_FILE = BlackboardRecordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyons.BlackboardRecordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackboardRecord.app/BlackboardRecord";
+			};
+			name = Release;
+		};
+		2BADA8B020EDE9BA00FF15F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79MZ7A623K;
+				INFOPLIST_FILE = BlackboardRecordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyons.BlackboardRecordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlackboardRecord;
+			};
+			name = Debug;
+		};
+		2BADA8B120EDE9BA00FF15F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79MZ7A623K;
+				INFOPLIST_FILE = BlackboardRecordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyons.BlackboardRecordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlackboardRecord;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BADA87820EDE9B900FF15F5 /* Build configuration list for PBXProject "BlackboardRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BADA8A720EDE9BA00FF15F5 /* Debug */,
+				2BADA8A820EDE9BA00FF15F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BADA8A920EDE9BA00FF15F5 /* Build configuration list for PBXNativeTarget "BlackboardRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BADA8AA20EDE9BA00FF15F5 /* Debug */,
+				2BADA8AB20EDE9BA00FF15F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BADA8AC20EDE9BA00FF15F5 /* Build configuration list for PBXNativeTarget "BlackboardRecordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BADA8AD20EDE9BA00FF15F5 /* Debug */,
+				2BADA8AE20EDE9BA00FF15F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BADA8AF20EDE9BA00FF15F5 /* Build configuration list for PBXNativeTarget "BlackboardRecordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BADA8B020EDE9BA00FF15F5 /* Debug */,
+				2BADA8B120EDE9BA00FF15F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BADA87520EDE9B900FF15F5 /* Project object */;
+}
