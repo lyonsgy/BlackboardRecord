@@ -54,14 +54,14 @@
 /// stop recording
 - (void)stopRecordingWithHandler:(ZYSScreenRecordStop)handler {
     [self.audioRecorder stopRecord];
-    [self.screenRecorder stopRecordingWithHandler:^(NSString *videoPath) {
+    [self.screenRecorder stopRecordingWithHandler:^(NSString *videoPath,NSString *videoName) {
         // merge video and audio
-        [ZYSRecorderUtils mergeVideo:self.screenRecorder.videoPath andAudio:self.audioRecorder.audioPath withCompletion:^(NSString *exportVideoPath) {
+        [ZYSRecorderUtils mergeVideo:self.screenRecorder.videoPath andAudio:self.audioRecorder.audioPath withCompletion:^(NSString *exportVideoPath,NSString *name) {
             NSLog(@"视频合成成功！");
             
             if (exportVideoPath) {
                 if (handler) {
-                    handler(exportVideoPath);
+                    handler(exportVideoPath,name);
                 }
             }
         }];

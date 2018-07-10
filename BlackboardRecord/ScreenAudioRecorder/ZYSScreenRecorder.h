@@ -13,7 +13,7 @@
 #import <Foundation/Foundation.h>
 
 typedef void(^ZYSScreenRecording)(NSTimeInterval duration);
-typedef void(^ZYSScreenRecordStop)(NSString *videoPath);
+typedef void(^ZYSScreenRecordStop)(NSString *videoPath,NSString *videoName);
 
 @interface ZYSScreenRecorder : NSObject
 

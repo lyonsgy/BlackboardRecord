@@ -23,18 +23,18 @@ static NSInteger counter;
 CGImageRef UICreateCGImageFromIOSurface(CFTypeRef surface);
 
 ////iOS 11 或者Xcode9.0以下使用下面一段
-//CVReturn CVPixelBufferCreateWithIOSurface(
-//                                          CFAllocatorRef allocator,
-//                                          CFTypeRef surface,
-//                                          CFDictionaryRef pixelBufferAttributes,
-//                                          CVPixelBufferRef *pixelBufferOut);
-
-//CFTypeRef --> IOSurfaceRef change  iOS 11 或者Xcode9.0以上使用
 CVReturn CVPixelBufferCreateWithIOSurface(
                                           CFAllocatorRef allocator,
-                                          IOSurfaceRef surface,
+                                          CFTypeRef surface,
                                           CFDictionaryRef pixelBufferAttributes,
                                           CVPixelBufferRef *pixelBufferOut);
+
+//CFTypeRef --> IOSurfaceRef change  iOS 11 或者Xcode9.0以上使用
+//CVReturn CVPixelBufferCreateWithIOSurface(
+//                                          CFAllocatorRef allocator,
+//                                          IOSurfaceRef surface,
+//                                          CFDictionaryRef pixelBufferAttributes,
+//                                          CVPixelBufferRef *pixelBufferOut);
 
 
 

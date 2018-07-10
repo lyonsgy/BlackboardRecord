@@ -14,6 +14,7 @@
 
 @property (nonatomic, assign) NSTimeInterval duration;
 @property (nonatomic, strong) NSString *videoPath;
+@property (nonatomic, strong) NSString *videoName;
 
 @property (nonatomic, copy) ZYSScreenRecording screenRecording;
 @property (nonatomic, copy) ZYSScreenRecordStop screenRecordStop;
@@ -75,7 +76,7 @@
     [self.videoWriter finishWritingWithCompletionHandler:^{
         dispatch_async(dispatch_get_main_queue(), ^{
             if (handler) {
-                handler(self.videoPath);
+                handler(self.videoPath,self.videoName);
             }
         });
         
@@ -141,7 +142,8 @@
     CGSize size = [[UIScreen mainScreen] bounds].size;
     
     NSString *documents = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    self.videoPath = [documents stringByAppendingPathComponent:@"video.mp4"];
+    
+    self.videoPath = [documents stringByAppendingPathComponent:[NSString stringWithFormat:@"recordVideo.mp4"]];
     
     [[NSFileManager defaultManager] removeItemAtPath:self.videoPath error:nil];
     
@@ -230,6 +232,5 @@
     
     return image;
 }
-
 
 @end

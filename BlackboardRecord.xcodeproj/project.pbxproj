@@ -53,6 +53,14 @@
 		2BADA92920EDFAD800FF15F5 /* LXFRectangleBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA91E20EDFAD800FF15F5 /* LXFRectangleBrush.m */; };
 		2BADA92A20EDFAD800FF15F5 /* LXFEraserBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA91F20EDFAD800FF15F5 /* LXFEraserBrush.m */; };
 		2BADA92B20EDFAD800FF15F5 /* LXFDrawBoardStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BADA92020EDFAD800FF15F5 /* LXFDrawBoardStyle.m */; };
+		2BF90CBB20EF001B0053305B /* VideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF90CBA20EF001B0053305B /* VideoListViewController.m */; };
+		2BF90CC220EF0BB40053305B /* LocalDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF90CC120EF0BB40053305B /* LocalDataManager.m */; };
+		2BF90CC520EF152D0053305B /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF90CC420EF152D0053305B /* VideoModel.m */; };
+		2BF90CC720EF15D20053305B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF90CC620EF15D20053305B /* libsqlite3.0.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
+		2BF90CCA20EF6DA80053305B /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF90CC920EF6DA80053305B /* TableViewCell.m */; };
+		2BF90CD220F2FFB40053305B /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF90CD120F2FFB40053305B /* VideoPlayerViewController.m */; };
+		2BF90CD420F30ADD0053305B /* libZFPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF90CD320F30ADD0053305B /* libZFPlayer.a */; };
+		2BF90CD620F485640053305B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF90CD520F485630053305B /* MediaPlayer.framework */; };
 		6F05831A0CF45FA1C213B297 /* libPods-BlackboardRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6D51CA552BE5640590CA6E /* libPods-BlackboardRecord.a */; };
 /* End PBXBuildFile section */
 
@@ -168,6 +176,19 @@
 		2BADA91E20EDFAD800FF15F5 /* LXFRectangleBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFRectangleBrush.m; sourceTree = "<group>"; };
 		2BADA91F20EDFAD800FF15F5 /* LXFEraserBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFEraserBrush.m; sourceTree = "<group>"; };
 		2BADA92020EDFAD800FF15F5 /* LXFDrawBoardStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXFDrawBoardStyle.m; sourceTree = "<group>"; };
+		2BF90CB920EF001B0053305B /* VideoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoListViewController.h; sourceTree = "<group>"; };
+		2BF90CBA20EF001B0053305B /* VideoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoListViewController.m; sourceTree = "<group>"; };
+		2BF90CC020EF0BB40053305B /* LocalDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalDataManager.h; sourceTree = "<group>"; };
+		2BF90CC120EF0BB40053305B /* LocalDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDataManager.m; sourceTree = "<group>"; };
+		2BF90CC320EF152D0053305B /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		2BF90CC420EF152D0053305B /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		2BF90CC620EF15D20053305B /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2BF90CC820EF6DA80053305B /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		2BF90CC920EF6DA80053305B /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		2BF90CD020F2FFB40053305B /* VideoPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
+		2BF90CD120F2FFB40053305B /* VideoPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
+		2BF90CD320F30ADD0053305B /* libZFPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libZFPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF90CD520F485630053305B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		6BBDB435DFED3B0578832667 /* Pods-BlackboardRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackboardRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlackboardRecord/Pods-BlackboardRecord.debug.xcconfig"; sourceTree = "<group>"; };
 		BB6D51CA552BE5640590CA6E /* libPods-BlackboardRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlackboardRecord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -177,6 +198,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF90CD620F485640053305B /* MediaPlayer.framework in Frameworks */,
+				2BF90CD420F30ADD0053305B /* libZFPlayer.a in Frameworks */,
+				2BF90CC720EF15D20053305B /* libsqlite3.0.tbd in Frameworks */,
 				2BADA90720EDF1F200FF15F5 /* AVFoundation.framework in Frameworks */,
 				2BADA90520EDF1E900FF15F5 /* UIKit.framework in Frameworks */,
 				2BADA90320EDF1DD00FF15F5 /* CoreGraphics.framework in Frameworks */,
@@ -205,6 +229,9 @@
 		2AFC3CD4D2F696BB2E968CB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BF90CD520F485630053305B /* MediaPlayer.framework */,
+				2BF90CD320F30ADD0053305B /* libZFPlayer.a */,
+				2BF90CC620EF15D20053305B /* libsqlite3.0.tbd */,
 				2BADA90620EDF1F200FF15F5 /* AVFoundation.framework */,
 				2BADA90420EDF1E900FF15F5 /* UIKit.framework */,
 				2BADA90220EDF1DC00FF15F5 /* CoreGraphics.framework */,
@@ -239,6 +266,7 @@
 		2BADA87F20EDE9B900FF15F5 /* BlackboardRecord */ = {
 			isa = PBXGroup;
 			children = (
+				2BF90CBF20EF0B3F0053305B /* Data */,
 				2BADA90920EDFAD800FF15F5 /* LXFDrawBoard */,
 				2BADA8BF20EDEEFE00FF15F5 /* DrawView */,
 				2BADA8B220EDEE5900FF15F5 /* ScreenAudioRecorder */,
@@ -247,6 +275,12 @@
 				2BADA90820EDF2C100FF15F5 /* PrefixHeader.pch */,
 				2BADA88320EDE9B900FF15F5 /* ViewController.h */,
 				2BADA88420EDE9B900FF15F5 /* ViewController.m */,
+				2BF90CB920EF001B0053305B /* VideoListViewController.h */,
+				2BF90CBA20EF001B0053305B /* VideoListViewController.m */,
+				2BF90CD020F2FFB40053305B /* VideoPlayerViewController.h */,
+				2BF90CD120F2FFB40053305B /* VideoPlayerViewController.m */,
+				2BF90CC820EF6DA80053305B /* TableViewCell.h */,
+				2BF90CC920EF6DA80053305B /* TableViewCell.m */,
 				2BADA88620EDE9B900FF15F5 /* Main.storyboard */,
 				2BADA88920EDE9BA00FF15F5 /* Assets.xcassets */,
 				2BADA88B20EDE9BA00FF15F5 /* LaunchScreen.storyboard */,
@@ -399,6 +433,17 @@
 			path = LXFBrush;
 			sourceTree = "<group>";
 		};
+		2BF90CBF20EF0B3F0053305B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2BF90CC020EF0BB40053305B /* LocalDataManager.h */,
+				2BF90CC120EF0BB40053305B /* LocalDataManager.m */,
+				2BF90CC320EF152D0053305B /* VideoModel.h */,
+				2BF90CC420EF152D0053305B /* VideoModel.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		3FAE57AACC5A151000B807E6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +464,7 @@
 				2BADA87920EDE9B900FF15F5 /* Sources */,
 				2BADA87A20EDE9B900FF15F5 /* Frameworks */,
 				2BADA87B20EDE9B900FF15F5 /* Resources */,
+				9C5C505D50350261020877F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -535,6 +581,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9C5C505D50350261020877F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BlackboardRecord/Pods-BlackboardRecord-resources.sh",
+				"${PODS_ROOT}/ZFPlayer/ZFPlayer/Classes/ControlView/ZFPlayer.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFPlayer.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlackboardRecord/Pods-BlackboardRecord-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F417A7099B49439F2F9D69BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -561,6 +625,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BADA8F320EDEEFE00FF15F5 /* BlazeiceUIControl.m in Sources */,
+				2BF90CCA20EF6DA80053305B /* TableViewCell.m in Sources */,
 				2BADA8F920EDEEFE00FF15F5 /* UIImage-Extensions.m in Sources */,
 				2BADA8EE20EDEEFE00FF15F5 /* BlazeiceCurledViewBase.m in Sources */,
 				2BADA92620EDFAD800FF15F5 /* LXFArrowBrush.m in Sources */,
@@ -573,15 +638,18 @@
 				2BADA8FE20EDEEFE00FF15F5 /* ACEDrawingTools.m in Sources */,
 				2BADA92720EDFAD800FF15F5 /* LXFPencilBrush.m in Sources */,
 				2BADA92920EDFAD800FF15F5 /* LXFRectangleBrush.m in Sources */,
+				2BF90CC220EF0BB40053305B /* LocalDataManager.m in Sources */,
 				2BADA92220EDFAD800FF15F5 /* LXFDrawBoard.m in Sources */,
 				2BADA8ED20EDEEFE00FF15F5 /* BlazeiceUtils.m in Sources */,
 				2BADA92520EDFAD800FF15F5 /* LXFBaseBrush.m in Sources */,
 				2BADA8FB20EDEEFE00FF15F5 /* BlazeicePlist.m in Sources */,
 				2BADA88220EDE9B900FF15F5 /* AppDelegate.m in Sources */,
 				2BADA8F820EDEEFE00FF15F5 /* UIView+UIImage.m in Sources */,
+				2BF90CD220F2FFB40053305B /* VideoPlayerViewController.m in Sources */,
 				2BADA8F020EDEEFE00FF15F5 /* NSTimer+Blocks.m in Sources */,
 				2BADA8FF20EDEEFE00FF15F5 /* ACEDrawingView.m in Sources */,
 				2BADA92420EDFAD800FF15F5 /* LXFMosaicBrush.m in Sources */,
+				2BF90CC520EF152D0053305B /* VideoModel.m in Sources */,
 				2BADA8F720EDEEFE00FF15F5 /* SRScreenRecorder.m in Sources */,
 				2BADA8F620EDEEFE00FF15F5 /* UncaughtExceptionHandler.m in Sources */,
 				2BADA8FC20EDEEFE00FF15F5 /* BlazeiceObject.m in Sources */,
@@ -590,6 +658,7 @@
 				2BADA8F520EDEEFE00FF15F5 /* UIView+ZXQuartz.m in Sources */,
 				2BADA8F120EDEEFE00FF15F5 /* UIColor+Extend.m in Sources */,
 				2BADA8F220EDEEFE00FF15F5 /* KTouchPointerWindow.m in Sources */,
+				2BF90CBB20EF001B0053305B /* VideoListViewController.m in Sources */,
 				2BADA8BE20EDEE5900FF15F5 /* ZYSScreenAudioRecorder.m in Sources */,
 				2BADA8BB20EDEE5900FF15F5 /* ZYSAudioRecorder.m in Sources */,
 				2BADA92B20EDFAD800FF15F5 /* LXFDrawBoardStyle.m in Sources */,

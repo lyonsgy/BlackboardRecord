@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import <MediaPlayer/MediaPlayer.h>
 #import "ZYSScreenAudioRecorder.h"
 #import "LXFRectangleBrush.h"
 #import "LXFLineBrush.h"
@@ -15,6 +14,7 @@
 #import "LXFTextBrush.h"
 #import "LXFMosaicBrush.h"
 #import "LXFEraserBrush.h"
+#import "LocalDataManager.h"
 
 @interface ViewController ()<LXFDrawBoardDelegate>
 @property (nonatomic, strong) ZYSScreenAudioRecorder *recorder;
@@ -129,17 +129,12 @@
     if (_recordBtn.selected==true) {
         //录制中（结束）
         _recordBtn.selected = false;
-        [_recorder stopRecordingWithHandler:^(NSString *videoPath) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                
-                MPMoviePlayerViewController *player = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL fileURLWithPath:videoPath]];
-                [player.moviePlayer setControlStyle:MPMovieControlStyleFullscreen];
-                [player.moviePlayer prepareToPlay];
-                [player.moviePlayer play];
-                [self presentMoviePlayerViewControllerAnimated:player];
-                
-                [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(movieFinishedCallback:) name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
-            });
+        [_recorder stopRecordingWithHandler:^(NSString *videoPath, NSString *name) {
+            VideoModel *video = [VideoModel new];
+            video.url = videoPath;
+            video.name = name;
+            video.cover = @"";
+            [[LocalDataManager shareLocalReceiptSingleton] addReceiptToLocal:video];
         }];
     }else{
         //未录制（开始）
@@ -151,9 +146,4 @@
     }
 }
 
-// movie play finished.
-- (void)movieFinishedCallback:(NSNotification *)notifycation{
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
-    [self dismissMoviePlayerViewControllerAnimated];
-}
 @end

@@ -20,7 +20,8 @@
     
     // ouput file path
     NSString *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    NSString *outputPath = [docPath stringByAppendingPathComponent:@"ScreenRecord.mp4"];
+    NSString *name = [self getTimeStamp];
+    NSString *outputPath = [docPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.mp4",name]];
     NSFileManager *fm = [NSFileManager defaultManager];
     if ([fm fileExistsAtPath:outputPath]) {
         if (![fm removeItemAtPath:outputPath error:nil]) {
@@ -98,9 +99,15 @@
         }
         
         if (completion) {
-            completion(outputPath);
+            completion(outputPath,name);
         }
     }];
 }
 
++ (NSString *)getTimeStamp{
+    NSDate* dat = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSTimeInterval a=[dat timeIntervalSince1970]*1000;
+    NSString *timeString = [NSString stringWithFormat:@"%.0f",a];
+    return timeString;
+}
 @end

@@ -12,7 +12,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^ZYSExportVideoCompletion)(NSString *exportVideoPath);
+typedef void (^ZYSExportVideoCompletion)(NSString *exportVideoPath,NSString *name);
 
 @interface ZYSRecorderUtils : NSObject
 
